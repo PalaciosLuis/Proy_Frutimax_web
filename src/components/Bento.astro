@@ -10,6 +10,21 @@ import BentoItem from "./BentoItem.astro";
     `}
 >
     <BentoItem
+        class="col-span-10 lg:col-span-10"
+        title="Sobre nosotros"
+        subtitle="En FRUTIMAX, sabemos que dirigir un ​restaurante va más allá de la cocina. ​Te ofrecemos una solución integral ​en abastecimiento para que te ​enfoques en hacer crecer tu negocio."
+    >
+        <div
+            slot="image"
+            class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-yellow-200/80
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+            style="background-image: url('/banner.webp');"
+        >
+        </div>
+        <p slot="content" class="max-w-xl"></p>
+    </BentoItem>
+    <BentoItem
         class="col-span-10 lg:col-span-4"
         title="Ahorro de Tiempo"
         subtitle="Con FRUTIMAX, ganas esas ​horas de sueño y ​planificación de vuelta."
