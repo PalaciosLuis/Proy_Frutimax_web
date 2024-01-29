@@ -1,0 +1,75 @@
+---
+import BentoItem from "./BentoItem.astro";
+---
+
+<section
+    class={`
+    w-full max-w-[1400px]
+    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto p-6 md:p-12 lg:p-20
+    `}
+>
+    <BentoItem
+        class="col-span-10 lg:col-span-4"
+        title="Ahorro de Tiempo"
+        subtitle="Con FRUTIMAX, ganas esas ​horas de sueño y ​planificación de vuelta."
+    >
+        <div
+            slot="image"
+            class="background transition-scale absolute bottom-0 left-0 top-0
+            -z-10 h-full w-full bg-yellow-200/80
+            bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+            style="background-image: url('/b002.webp');"
+        >
+        </div>
+        <p slot="content" class="max-w-xl"></p>
+    </BentoItem>
+
+    <BentoItem
+        class="col-span-10 lg:col-span-6"
+        title="Ahorro Económico"
+        subtitle="Menores costos en tus ​compras significa mayor ​margen de ganancia para ​tu restaurante."
+    >
+        <div
+            slot="image"
+            class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-yellow-200/95
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+            style="background-image: url('/b003.webp');"
+        >
+        </div>
+        <p slot="content"></p>
+    </BentoItem>
+
+    <BentoItem
+        class="col-span-10 lg:col-span-6"
+        title="Enfoque en el Crecimiento"
+        subtitle="Centra tus energías en crear ​experiencias gastronómicas ​únicas, sin preocuparte por el ​abastecimiento."
+    >
+        <div
+            slot="image"
+            class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-yellow-200/95
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+            style="background-image: url('/b004.webp');"
+        >
+        </div>
+        <p slot="content"></p>
+    </BentoItem>
+
+    <BentoItem
+        title="Reducción de Estrés"
+        subtitle="Eliminar la ​incertidumbre de la ​cadena de suministro."
+        class="col-span-10 lg:col-span-4"
+    >
+        <div
+            slot="image"
+            class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-yellow-200/80
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+            style="background-image: url('/b001.webp');"
+        >
+        </div>
+        <p slot="content"></p>
+    </BentoItem>
+</section>
